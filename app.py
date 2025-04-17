@@ -10,11 +10,11 @@ app = Flask(__name__)
 CORS(app)
 
 # Path penyimpanan gambar KTP
-UPLOAD_FOLDER = r'C:\bmt-muda-main-test\bmt-muda-main-test\public\storage\public\file'
+UPLOAD_FOLDER = r'./storage/file'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Path penyimpanan cap jempol
-FINGERPRINT_FOLDER = r'C:\bmt-muda-main-test\bmt-muda-main-test\public\storage\public\capJempol'
+FINGERPRINT_FOLDER = r'./storage/capJempol'
 os.makedirs(FINGERPRINT_FOLDER, exist_ok=True)
 
 def ocr_ktp(image_data, api_key):
